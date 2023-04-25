@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body_content %}
+
+<div class="tm-main-content">
+    <section class="tm-margin-b-l">
+
+        <div class="tm-gallery">
+            <div class="row">
+
+                <figure class="col-lg-3 col-md-4 col-sm-6 col-12 tm-gallery-item">
+                        {%if fname %}
+                        <div>
+                            <img src="{{url_for('static',filename='rsm/'+fname)}}"/>
+                        </div>
+                        {%endif%}
+                </figure>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
